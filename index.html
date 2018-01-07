@@ -1,51 +1,118 @@
 <!doctype html>
-<html lang="ru">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <title>Курс по фронтенду. Версия 1.5</title>
-  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
-  <link rel="stylesheet" href="./styles.css">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Uber eats</title>
 </head>
-
 <body>
-  <nav>
-    <a href="whoiam">Кто я такой</a>
-  </nav>
-  <header>
-    <h1>Курс по фронтенду.
-      <br> Версия 1.5
-    </h1>
-    <p>Премиальный. Бутиковый. Практический.</p>
-  </header>
-  <main>
-    <section id="whoiam" class="whoiam">
-      <h2>Кто я такой</h2>
-      <p>Я Евгений Родионов. Сделал диджитал Рублёвки.ру, сейчас занимаюсь популяризацией технологий.</p>
-      <p>Я руководил разработкой рублевки</p>
-    </section>
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <a href="/" class="header__logo">UberEats</a>
+      <div class="filter">
+        <form action="/" method="post">
+          <select name="delivery-speed" id="delivery-speed">
+            <option>ASAP</option>
+          </select>
+          to
+          <input name="delivery-place" type="text" placeholder="ul. Bolshaya Dmitrovka,22 ">
+        </form>
+      </div>
+      <div class="button-wrap">
+        <button class="btn">Sign In</button>
+        <button class="btn btn--black">Register</button>
+        <a class="header__cart" href="#">Shop cart</a>
+      </div>
+    </div>
+  </div>
+</header>
 
-    <section>
-      <h2>Ченджлог к версии 1.5</h2>
-      <p>Я провел 4 потока</p>
+<section class="search">
+  <div class="container">
+    <div class="row">
+      <form action="/" class="search__form" method="post">
+        <input class="search__input" type="text" placeholder="Search for restaurant or cuisine">
+      </form>
+    </div>
+  </div>
+</section>
 
-      <h3>Было</h3>
-      <ul>
-        <li>материалы готовились во время курса;</li>
-        <li>мало теории;</li>
-        <li>нестабильная программа;</li>
-      </ul>
+<main>
+  <section class="stores">
+    <div class="container">
+      <h2 class="stores__title">Moscow Restaurants</h2>
+      <div class="row">
 
-      <h3>Стало</h3>
-      <ul>
-        <li>макеты и АПИ сделаны до начала курса;</li>
-        <li>новые объясняющие видео</li>
-        <li>программа не будет прыгать на ходу</li>
-      </ul>
-    </section>
+        <div class="col-md-4">
+          <div class="stores__card">
 
-  </main>
+            <img src="http://via.placeholder.com/308x256" alt="Макдоналдс — Газетный" class="stores__img">
+
+            <h3 class="stores__card-title">Макдоналдс — Газетный</h3>
+
+            <div class="stores__properties">
+              <span class="stores__properties-item">₽₽</span>
+              <span class="stores__properties-item">Бургеры</span>
+            </div>
+
+            <div class="stores__time">30 - 40 Min</div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <a href="/" class="footer__logo">UberEats</a>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <form action="/" method="post">
+          <select class="footer__language-select" name="language">
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+          </select>
+        </form>
+
+        <div class="footer__hashtag"><span>#</span>>UberEats</div>
+
+        <div class="footer__social">
+          <a href="#" class="footer__social-item">faceboock</a>
+          <a href="#" class="footer__social-item">twetter</a>
+          <a href="#" class="footer__social-item">instagram</a>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <nav class="footer__menu">
+          <a href="#" class="footer__menu-item">About UberEats</a>
+          <a href="#" class="footer__menu-item">Become a Delivery Partner</a>
+          <a href="#" class="footer__menu-item">Become a Restaurant Partner</a>
+        </nav>
+      </div>
+
+      <div class="col-md-4">
+        <nav class="footer__menu">
+          <a href="#" class="footer__menu-item">See all cities</a>
+          <a href="#" class="footer__menu-item">Pricing</a>
+          <a href="#" class="footer__menu-item">Help</a>
+          <a href="#" class="footer__menu-item">FAQs</a>
+        </nav>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
 </body>
-
 </html>
