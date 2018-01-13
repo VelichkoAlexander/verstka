@@ -16,20 +16,29 @@
 <header class="header">
   <div class="container">
     <div class="row">
-      <a href="/" class="header__logo">UberEats</a>
-      <div class="filter">
-        <form action="/" method="post">
-          <select name="delivery-speed" id="delivery-speed">
-            <option>ASAP</option>
-          </select>
-          to
-          <input name="delivery-place" type="text" placeholder="ul. Bolshaya Dmitrovka,22 ">
-        </form>
+      <div class="col-3">
+        <a href="/" class="header__logo">
+          <img src="./img/logo.svg" alt="UberEats logo">
+        </a>
       </div>
-      <div class="button-wrap">
-        <button class="btn">Sign In</button>
-        <button class="btn btn--black">Register</button>
-        <a class="header__cart" href="#">Shop cart</a>
+      <div class="col-5">
+        <div class="filter">
+          <form action="/" method="post">
+            <select class="filter__delivery-speed" name="delivery-speed" id="delivery-speed">
+              <option>ASAP</option>
+            </select>
+            to
+            <input class="filter__delivery-place" name="delivery-place" type="text"
+                   placeholder="ul. Bolshaya Dmitrovka,22 ">
+          </form>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="button-wrap">
+          <button class="btn btn--transparent">Sign In</button>
+          <button class="btn btn--black">Register</button>
+          <a class="header__cart" href="#">Shop cart</a>
+        </div>
       </div>
     </div>
   </div>
@@ -149,7 +158,8 @@
               <span class="stores__properties-item">₽</span>
               <span class="stores__properties-item">Выпечка</span>
               <span class="stores__properties-item">Десерты</span>
-              Капкейки            </div>
+              <span class="stores__properties-item">Капкейки</span>
+            </div>
 
             <div class="stores__time">25 - 35 Min</div>
 
@@ -216,7 +226,11 @@
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <a href="/" class="footer__logo">UberEats</a>
+      <div class="col-12">
+        <a href="/" class="footer__logo">
+          <img src="./img/white-logo.svg" alt="ubereats logo">
+        </a>
+      </div>
     </div>
     <div class="row">
       <div class="col-4">
@@ -227,7 +241,9 @@
           </select>
         </form>
 
-        <div class="footer__hashtag"><span>#</span>>UberEats</div>
+        <div class="footer__hashtag">
+          <span>#</span>UberEats
+        </div>
 
         <div class="footer__social">
           <a href="#" class="footer__social-item">faceboock</a>
