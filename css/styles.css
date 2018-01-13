@@ -194,22 +194,22 @@ body {
   width: 100%;
   line-height: 24px;
   font-size: 16px;
-  border:none;
+  border: none;
   border-bottom: 1px solid var(--border-color);
   background: url('../img/icons/search.svg') 0 center no-repeat;
   
 }
 
 .search__input::-webkit-input-placeholder {
-  color: rgba(98,98,98, .5);
+  color: rgba(98, 98, 98, .5);
 }
 
 .search__input::-moz-placeholder {
-  color: rgba(98,98,98, .5);
+  color: rgba(98, 98, 98, .5);
 }
 
 .search__input:-ms-input-placeholder {
-  color: rgba(98,98,98, .5);
+  color: rgba(98, 98, 98, .5);
 }
 
 /*stores*/
@@ -295,7 +295,22 @@ body {
 }
 
 .footer__language-select {
+  z-index: 10;
+  min-width: 227px;
   margin-bottom: 33px;
+  padding: 12px 48px;
+  font-family: var(--main-font);
+  font-size: 13px;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  background: url(../img/icons/world.svg) 16px center no-repeat,
+  url(../img/icons/drop-arrow.svg) calc(100% - 8px) center no-repeat;
+  background-color: #3b3b3b;
+  cursor: pointer;
 }
 
 .footer__hashtag {
@@ -303,6 +318,35 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
+}
+
+.footer__social {
+  display: flex;
+}
+
+.footer__social-item {
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer__social-item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.footer__social-item--fb {
+  background-image: url(../img/icons/facebook.svg);
+}
+
+.footer__social-item--tw {
+  background-image: url(../img/icons/twitter.svg);
+}
+
+.footer__social-item--ins {
+  background-image: url(../img/icons/instagram.svg);
 }
 
 .footer__hashtag span {
@@ -327,4 +371,51 @@ body {
   margin-bottom: 23px;
 }
 
+.footer__menu-section {
+  padding-bottom: 47px;
+  border-bottom: 1px solid rgba(256, 256, 256, 0.4);
+}
 
+.footer__app-section {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(256, 256, 256, 0.4);
+}
+
+.footer__app {
+  width: 135px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__app:not(:last-child) {
+  margin-right: 40px;
+}
+
+.footer__app--apple-store {
+  background-image: url(../img/icons/apple_store.svg);
+  
+}
+
+.footer__app--google-play {
+  background-image: url(../img/icons/google_play.svg);
+}
+
+.footer__copyright-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 11px;
+}
+
+.footer__copyright-section a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__copyright-section a:hover {
+  text-decoration: underline;
+}
+  
