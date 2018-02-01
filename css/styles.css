@@ -42,6 +42,10 @@ body {
   border: 1px solid transparent;
   background-color: transparent;
   cursor: pointer;
+
+  @media (--lg-viewport) {
+    font-size: 13px;
+  }
 }
 
 .btn--transparent {

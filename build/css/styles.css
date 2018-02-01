@@ -33,6 +33,12 @@ body {
   background-color: transparent;
   cursor: pointer;
 }
+@media only screen and (min-width: 992px) {
+
+  .btn {
+    font-size: 13px;
+  }
+}
 
 .btn--transparent {
   border-color: #e0e0e0;
